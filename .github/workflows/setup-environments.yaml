@@ -4,11 +4,6 @@ run-name: Setup Environments in ${{ github.ref_name }} by ${{ github.actor }}
 on:
   workflow_dispatch:
     inputs:
-      ci-environment:
-        description: "CI environment name"
-        required: true
-        type: string
-        default: "ci"
       aws-region:
         description: "AWS region where services will be deployed"
         required: true
