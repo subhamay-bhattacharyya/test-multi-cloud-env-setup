@@ -25,7 +25,6 @@ jobs:
     name: Setup
     uses: subhamay-bhattacharyya-gha/setup-multi-cloud-environments-wf/.github/workflows/setup-environments.yaml@feature/GHA-0007-initial-release
     with:
-      ci-environment: ${{ github.event.inputs.ci-environment }}
       aws-region: ${{ github.event.inputs.aws-region }}
       gcp-region: ${{ github.event.inputs.gcp-region }}
       azure-region: ${{ github.event.inputs.azure-region }}
